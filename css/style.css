@@ -1,0 +1,43 @@
+#menu {
+	background-color: yellow;
+	margin: 1em;
+}
+
+#timeline {
+	position: relative;
+	height: 900px;
+}
+
+#timeline_objects {
+	list-style-type: none;
+	margin: 40px;
+	background-color: black;
+}
+
+#timeline_objects .ui-selecting {
+	box-shadow: 20px #222;
+}
+
+#timeline_objects .ui-selected {
+	box-shadow: 8px 8px 8px red, -8px 8px 8px green, 8px -8px 8px blue, -8px -8px 8px yellow;
+}
+
+.timeline_item {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.timeline_item_handle {
+	position: static;
+	height: 10px;
+	min-width: 50px;
+	background-color: red;
+}
+
+.timeline_item_text {
+	position: static;
+	min-height: 20px;
+	padding: 0.4em;
+	background-color: green;	
+}
