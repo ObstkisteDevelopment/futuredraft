@@ -6,26 +6,12 @@
 #timeline {
 	position: relative;
 	height: 900px;
-}
-
-#timeline_objects {
-	list-style-type: none;
-	margin: 40px;
-	background-color: black;
-}
-
-#timeline_objects .ui-selecting {
-	box-shadow: 20px #222;
-}
-
-#timeline_objects .ui-selected {
-	box-shadow: 8px 8px 8px red, -8px 8px 8px green, 8px -8px 8px blue, -8px -8px 8px yellow;
+	border: 2px solid silver;
+	transform-style: preserve-3d;
 }
 
 .timeline_item {
 	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 .timeline_item_handle {

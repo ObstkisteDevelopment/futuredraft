@@ -12,7 +12,9 @@ function fd_main() {
 		create_object(e.offsetX, e.offsetY);
 	})
 
-	$("timeline_objects").selectable();
+	$("#timeline").mousewheel(function(e, dir) {
+		console.log(dir);
+	});
 }
 
 function create_object(x, y) {
@@ -25,16 +27,16 @@ function create_object(x, y) {
 	text.addClass("timeline_item_text");
 	text.html("Object " + num);
 
-	var object = $(document.createElement("li"));
+	var object = $(document.createElement("div"));
 	object.addClass("timeline_item");
-	object.addClass("ui-widget-content")
 	object.append(handle);
 	object.append(text);
 	object.dblclick(function() {return false;});
 
 	object.hide();
-	$("#timeline_objects").append(object);
+	$("#timeline").append(object);
 	object.offset({left: x, top: y});
 	object.slideDown();
 	object.draggable();
+	object.zoomTarget();
 }
