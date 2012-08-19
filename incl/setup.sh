@@ -1,8 +1,8 @@
 #!/bin/bash
 
-wget http://jqueryui.com/download/jquery-ui-1.8.22.custom.zip
-unzip jquery-ui-1.8.22.custom.zip -d jqueryui
-rm jquery-ui-1.8.22.custom.zip
+wget http://jqueryui.com/download/jquery-ui-1.8.23.custom.zip
+unzip jquery-ui-1.8.23.custom.zip -d jqueryui
+rm jquery-ui-1.8.23.custom.zip
 
 wget https://github.com/downloads/brandonaaron/jquery-mousewheel/jquery-mousewheel-3.0.6.zip
 unzip jquery-mousewheel-3.0.6.zip
